@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(href='https://fonts.googleapis.com/css2?family=Sacramento&display=swap' rel='stylesheet')
+    link(rel='StyleSheet' href='css/styles.css' type='text/css')
+
+  body
+    .sidebar
+      img(src='images/logo.png' alt='Logo' style="width:100px; height:100px")
+      a.active(href='#home') SHOP
+      a(href='#news') COLLECTION
+      a(href='#about') ABOUT
+
+  block content
+    header
+      .text Summer Collection
+      .images 
+        img(src='images/logo.png' alt='Logo' style="width:100px; height:400px")
+        .caption MALE
+        img(src='images/logo.png' alt='Logo' style="width:100px; height:400px")     
+        .caption FEMALE
+    .footer
+      .left
+        .text SUNSCRIBE TO NEWSLETTER
+        label Email:
+          input(
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+          )
+      .middle 
+        .info INFO 
+        .policy POLICY
+      .right
+        .social
+          a.fa.fa-facebook(href='#')
+          a.fa.fa-instagram(href='#')
